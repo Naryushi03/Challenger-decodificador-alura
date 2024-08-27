@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge ONE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<body>
+    <header>
+        <h1>DECODIFICADOR DE TEXTO</h1>
+    </header>
+    <main class="main-container">
+        <section>
+            <textarea class="input-texto" cols="28" rows="9" placeholder="Digite seu texto"></textarea>
+            <div class="botoes">
+                <button class="encriptar" onclick="btnEncriptar()">
+                    Criptografar
+                </button>
+                <button class="descriptar" onclick="btnDesencriptar()">
+                    Descriptografar
+                </button>
+
+            </div>
+        </section>
+        <section class="texto-section">
+            <textarea class="mensagem" id="textearea" cols="20" rows="9"></textarea>
+            <h3>Nenhuma mensagem </br> encontrada</h3>
+            <!--<p>Digite um texto que você deseja<br> criptografar ou descriptografar.</p> // logo trabalho o texto.-->
+            <button id="copiar" onclick="btncopiar()">Copiar</button>
+            <button id="limpar" onclick="btnLimpar()">Limpar</button>
+        </section>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
